@@ -1,0 +1,144 @@
+.customer-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.customer-tables {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.table {
+  width: 48%;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+.table-scroll {
+  max-height: 400px;
+  overflow-y: auto; 
+  overflow-x: hidden;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+  word-wrap: break-word;
+}
+
+td {
+  max-width: 200px;
+  white-space: normal;
+}
+
+@media (max-width: 768px) {
+  .customer-tables {
+      flex-direction: column;
+  }
+
+  .table {
+      width: 100%;
+      margin-bottom: 20px;
+  }
+}
+
+.customer-header {
+  background-color: #282c34;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.customer-main-content {
+  display: flex;
+  flex-grow: 1;
+}
+
+.customer-sidebar {
+  min-width: 200px;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+.customer-sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.customer-sidebar ul li a {
+  text-decoration: none;
+  color: black;
+  display: block;
+  padding: 10px;
+  transition: background-color 0.3s;
+}
+
+.customer-sidebar ul li a:hover {
+  background-color: #ddd;
+}
+
+.customer-dashboard {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.customer-selector {
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 25%;
+}
+
+.profile-section {
+  width: 100%;
+}
+
+.profile-details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-avatar {
+  margin-left: auto;
+}
+
+.profile-avatar img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+  .profile-details {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .profile-avatar {
+      order: -1;
+      margin-left: 0;
+      margin-bottom: 10px;
+  }
+
+  .profile-avatar img {
+      width: 200px;
+      height: 200px;
+  }
+}

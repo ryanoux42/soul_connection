@@ -1,0 +1,69 @@
+.tips-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .tips-header {
+    background-color: #282c34;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .tips-main-content {
+    display: flex;
+    flex-grow: 1;
+    overflow: auto;
+  }
+  
+  .tips-sidebar {
+    min-width: 200px;
+    background-color: #f4f4f4;
+    padding: 20px;
+  }
+  
+  .tips-sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .tips-sidebar ul li a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 10px;
+    transition: background-color 0.3s;
+  }
+  
+  .tips-sidebar ul li a:hover {
+    background-color: #ddd;
+  }
+  
+  .tips-dashboard {
+    flex-grow: 1;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 20px;
+  }
+  
+  .tip-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    outline: none;
+  }
+  
+  .tip-item:focus {
+    border: 2px solid #0056b3;
+    box-shadow: 0 0 5px rgba(0,85,179,0.5);
+  }
+  
+  .tip-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+  

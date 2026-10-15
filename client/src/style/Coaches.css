@@ -1,0 +1,91 @@
+.coaches-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.coaches-header {
+  background-color: #282c34;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.coaches-main-content {
+  display: flex;
+  flex-grow: 1;
+}
+
+.coaches-sidebar {
+  min-width: 200px;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+.coaches-sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.coaches-sidebar ul li a {
+  text-decoration: none;
+  color: black;
+  display: block;
+  padding: 10px;
+  transition: background-color 0.3s;
+}
+
+.coaches-sidebar ul li a:hover {
+  background-color: #ddd;
+}
+
+.coaches-dashboard {
+  flex-grow: 1;
+  padding: 20px;
+  overflow-x: auto;
+  overflow-y: auto;
+  max-height: calc(100vh - 200px);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  white-space: nowrap;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border: 1px solid #ccc;
+}
+
+select {
+  width: 100%;
+  height: auto;
+  padding: 5px;
+}
+
+@media (min-width: 768px) {
+  .coaches-sidebar {
+    min-width: 250px;
+  }
+}
+
+.add-form-container {
+  width: 30%  ;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin: auto;
+}
+
+input[type=text], input[type=date], select, textarea {
+  width: 60%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}

@@ -1,0 +1,15 @@
+services:
+  postgres:
+    image: postgres
+    ports: 
+      - ${PG_PORT}:5432
+    env_file: 
+      - .env
+    volumes:
+      - ./postgres-data:/var/lib/postgresql/data
+      - ./soul_connection.sql:/docker-entrypoint-initdb.d/soul_connection.sql
+    restart: always
+    environment:
+      - POSTGRES_USER=${PG_USER}
+      - POSTGRES_PASSWORD=${PG_PASSWORD}
+      - POSTGRES_DB=postgres

@@ -1,0 +1,62 @@
+.create-coach-container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.create-coach-container h1 {
+  text-align: center;
+  color: #333;
+}
+
+.create-coach-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.create-coach-container label {
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.create-coach-container input[type="text"],
+.create-coach-container input[type="email"],
+.create-coach-container input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.create-coach-container input[type="radio"] {
+  margin-left: 10px;
+}
+
+.create-coach-container button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.create-coach-container button:hover {
+  background-color: #45a049;
+}
+
+.create-coach-container .back-button {
+  background-color: #555;
+  margin-top: 15px;
+}
+
+.create-coach-container .back-button:hover {
+  background-color: #333;
+}

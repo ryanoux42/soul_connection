@@ -1,0 +1,181 @@
+.clothes-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.clothes-header {
+  background-color: #282c34;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.clothes-main-content {
+  display: flex;
+  flex-grow: 1;
+}
+
+.clothes-sidebar {
+  min-width: 200px;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+.clothes-sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.clothes-sidebar ul li a {
+  text-decoration: none;
+  color: black;
+  display: block;
+  padding: 10px;
+  transition: background-color 0.3s;
+}
+
+.clothes-sidebar ul li a:hover {
+  background-color: #ddd;
+}
+
+.profile-container {
+  align-items: left;
+}
+
+.customer-selector {
+  display: flex;
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  height: 5vh;
+  align-items: center;
+}
+
+.profile-avatar {
+  margin-left: auto;  
+}
+
+.profile-avatar img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.profile-infos ul {
+  list-style: none;
+  padding: 0;
+}
+
+@media (max-width: 768px) {
+  .profile-details {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile-avatar {
+    order: -1;
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+  .profile-avatar img {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+.clothes-dashboard {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.clothes-category {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.clothes-category img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.clothes-category img:hover {
+  transform: scale(1.1);
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(187, 181, 181, 0.6);
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.carousel-button:hover {
+  background-color: rgba(3, 21, 220, 0.8);
+}
+
+.carousel-button.left {
+  left: -30px;
+}
+
+.carousel-button.right {
+  right: -30px;
+}
+
+.zoomed-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.zoomed-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  max-width: 90%;
+  max-height: 90%;
+  overflow: auto;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.close-button:hover {
+  background-color: rgba(0, 0, 0, 1);
+}
